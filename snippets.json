@@ -1,0 +1,16 @@
+﻿{
+    "variables": {
+        "lang": "es",
+	"boot_min": "\n<!--Permite instalar Bootstrap CSS desde un servidor-->",
+	"cs": "\n<!--Instala styles.css, archivo con estilos adicionales que se debe crear en la carpeta css dentro de la raiz del proyecto-->",
+	"js": "\n<!--Instala behavior.js, archivo con comportamientos javascript que se debe crear en la carpeta js dentro de la raiz del proyecto-->",
+	"javascr": "\n\n\n<!--Javascript opcionales-->\n<!--Permite instalar jquery-->",
+	"popp": "\n<!--Permite instalar popper-->",
+	"boot_js": "\n<!--Permite instalar Bootstrap JS-->"
+    },
+    "html": {
+        "snippets": {
+            "!!": "!!!+html[lang=${lang}]>(head>meta[charset=UTF-8]+meta[name=viewport content=\"width=device-width, initial-scale=1.0, shrink-to-fit=no\"]+{${boot_min}}+link[rel=stylesheet href=https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css integrity=sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T crossorigin=anonymous]+{${cs}}+link[rel=stylesheet href=./css/styles.css]+{${js}}+script[src=./js/behavior.js]+{\t}+title{${1:Título de la página}})+body>{${javascr}}+script[src=https://code.jquery.com/jquery-3.3.1.slim.min.js integrity=sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo crossorigin=anonymous]+{${popp}}+script[src=https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js integrity=sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 crossorigin=anonymous]+{${boot_js}}+script[src=https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js integrity=sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM crossorigin=anonymous]"
+        }
+    }
+}
